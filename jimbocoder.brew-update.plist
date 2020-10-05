@@ -1,0 +1,31 @@
+<plist version="1.0">
+<dict>
+
+    <key>Label</key>
+    <string>jimbocoder.brew-update</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/local/bin/brew update</string>
+    </array>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>StandardOutPath</key>
+    <string>/tmp/brew-update.stdout.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/tmp/brew-update.stderr.log</string>
+
+    <key>InitGroups</key>
+    <true/>
+
+    <key>KeepAlive</key>
+    <true/>
+
+    <key>StartInterval</key>
+    <integer>43200</integer>
+
+</dict>
+</plist>
