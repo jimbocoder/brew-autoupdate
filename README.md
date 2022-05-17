@@ -1,5 +1,5 @@
 # brew-autoupdate
-I am sick of `brew update` slowing me down
+I got sick of `brew update` slowing me down at the most inconvenient times..
 
 
 ## What it does

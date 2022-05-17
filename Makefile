@@ -6,11 +6,11 @@ PLIST_DEST := $(LAUNCH_AGENTS_DIR)/$(PLIST)
 
 
 install:
-	cp -i $(PLIST) "$$HOME/Library/LaunchAgents/"
+	cp -i "$(PLIST)" "$(PLIST_DEST)"
 	$(MAKE) load
 
 update:
-	cp $(PLIST) "$$HOME/Library/LaunchAgents/"
+	cp "$(PLIST)" "$(PLIST_DEST)"
 	$(MAKE) load
 
 load:

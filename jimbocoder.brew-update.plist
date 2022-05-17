@@ -4,19 +4,27 @@
     <key>Label</key>
     <string>jimbocoder.brew-update</string>
 
+    <key>EnvironmentVariables</key>
+    <dict>
+      <key>PATH</key>
+      <string>/usr/local/bin:/usr/bin:/bin:/usr/sbin:/opt/homebrew/bin:/opt/homebrew/sbin</string>
+    </dict>
+
     <key>ProgramArguments</key>
     <array>
-        <string>/usr/local/bin/brew update</string>
+        <string>/usr/bin/env</string>
+        <string>brew</string>
+        <string>update</string>
     </array>
 
     <key>RunAtLoad</key>
     <true/>
 
     <key>StandardOutPath</key>
-    <string>/tmp/brew-update.stdout.log</string>
+    <string>/tmp/jimbocoder.brew-update.stdout.log</string>
 
     <key>StandardErrorPath</key>
-    <string>/tmp/brew-update.stderr.log</string>
+    <string>/tmp/jimbocoder.brew-update.stderr.log</string>
 
     <key>InitGroups</key>
     <true/>
