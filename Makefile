@@ -14,7 +14,7 @@ update:
 	$(MAKE) load
 
 load:
-	launchctl unload -w "$(PLIST_DEST)"
+	launchctl list "$(PLIST)" && launchctl unload -w "$(PLIST_DEST)" || true
 	launchctl load -w "$(PLIST_DEST)"
 
 
